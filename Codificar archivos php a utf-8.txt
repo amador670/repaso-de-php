@@ -1,0 +1,5 @@
+Añadir al principio de la pagina .php 
+
+header('Content-type: text/html; charset=UTF-8');  
+
+para codificar las palabras y permitir acentos y ñ, entre otros caracteres latinos. 

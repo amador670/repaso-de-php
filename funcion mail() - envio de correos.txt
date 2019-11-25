@@ -1,0 +1,21 @@
+La función mail() de PHP tiene la sintaxis:
+
+[php]mail($email, $subject, $mensaje, $headers);[/php]
+
+Donde se tiene:
+
+    $email: Dirección de correo del destinatario.
+    $subject: Subject de correo a enviar.
+    $mensaje: es el cuerpo del mensaje.
+    $headers: encabezados de correo.
+
+Ahora bien acerca del parámetro $header, este es una cadena de texto opcional donde se pueden incluir las direcciones adicionales del email (To, CC, BCC, Reply-To), esta cadena tiene la siguiente forma:
+
+[code]
+From: remitente@dominio.com\r\n
+To: destino@dominio.com\r\n
+CC: copia@dominio.com\r\n
+BCC: copiaoculta@dominio.com\r\n
+Reply-To: repondera@dominio.com\r\n
+[/code]
+

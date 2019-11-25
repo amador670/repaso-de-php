@@ -1,0 +1,14 @@
+Ingresar valores con varios decimales en MySQL 
+
+1) Un campo con decimal puede ser DOUBLE, REAL, FLOAT o DECIMAL.
+
+2) Si vas a usar decimales por aproximación, usa DOUBLE, REAL o FLOAT, son de punto flotante.
+
+3) Si vas a usar valores de moneda, o decimales que requieren precisión usa DECIMAL(l,d), donde "l" es la longitud total de la mayor cifra, incluyendo los espacios para decimales y uno para el punto, y "d" es la cantidad de decimales que se representarán. Ejemplo 123456.789, por ejemplo, sería un DECIMAL(10,3).
+
+4) No uses DOUBLE, REAL o FLOAT para valores monetarios. Como son numeros por aproximación pueden aparecer redondeos inesperados.
+
+5) Para insertar un número decimal en un campo de tipo decimal, el valor debe estar expresado en formato ingles. Así, 123,45 se escribe 123.45: Con punto y no coma. La coma se usa para separar columnas o datos que corresponden a diferentes columnas. No para componer un decimal.
+__________________________________
+
+Para elegir varios decimales debes selccionar FLOAT y al lado donde dice Longitud/Valores colocas por ejemplo 2,2 (dos enteros y dos decimales). Esto quedaria de la siguiente forma: FLOAT(2,2)

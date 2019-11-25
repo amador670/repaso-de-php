@@ -1,0 +1,5 @@
+Esta propiedad nos permite si queremos indicar que un valor sea numerico o no, en este caso un ejemplo seria: 
+
+1.- is_numeric($variable) para valores numericos.
+
+2.- !is_numeric($variable) para indicar si no es un valor numerico.

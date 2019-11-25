@@ -1,0 +1,3 @@
+$_SERVER es un array que contiene información, tales como cabeceras, rutas y ubicaciones de script. Las entradas de este array son creadas por el servidor web. No hay garantía que cada servidor web proporcione alguna de estas entradas, existen servidores que pueden omitir algunas o proporcionar otras no recogidas aquí. 
+
+La propiedad $_SERVER se encarga de recoger y suministrar toda la infomacion a traves de script solicitadas al servidor web, depende de que array utilicemos $_SERVER[ARRAY] sera el tipo de informacion que nos devolvera

@@ -1,0 +1,7 @@
+is_uploaded_file, esta propiedad nos permite verificar si se cargo el archivo al servidor. Ejemplo:
+
+//Si no esta cargado el archivo $_FILE mostrar un alert
+if (!is_uploaded_file($_FILES[''nombre_campo_file']['tmp_name])) {
+  die ("El archivo no subió completo o no es correcto");
+}   
+

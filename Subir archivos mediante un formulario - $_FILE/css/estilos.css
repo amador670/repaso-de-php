@@ -1,0 +1,57 @@
+*{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+body{
+ margin: 50PX;
+ font-size: 18px;
+ font-family: Agency FB;
+ text-align: justify;
+}
+
+h1{
+ text-align: left;
+}
+
+form{
+ background: #f8f8f8;
+ padding: 20px;
+ border-radius: 7px;
+ border: 2px solid #00a7ff;
+}
+
+input[type="text"]{
+ width: 100%;
+ max-width: 500px;
+ padding: 5px 10px;
+}
+
+input[type="file"]{
+ width: 100%;
+}
+
+.error{
+ font-size: 16px;
+ font-family: verdana;
+ font-weight: 100;
+ color: #fff;
+ background: #ff9b9b;
+ border: 1px solid #ff2700;
+ border-radius: 5px;
+ padding: 10px;
+ margin-top: 25px;
+}
+
+.success{
+ font-size: 16px;
+ font-family: verdana;
+ font-weight: 100;
+ color: #fff;
+ background: #6ab96a;
+ border: 1px solid #004100;
+ border-radius: 5px;
+ padding: 10px;
+ margin-top: 25px;
+}

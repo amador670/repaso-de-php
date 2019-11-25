@@ -1,0 +1,11 @@
+$_FILE - Propiedades del la variable global $_File en PHP
+
+Esta variable contiene propiedades globales, son:
+
+
+<input type="file" name="documento"> 
+
+$nombre = $_FILES["documento"]["name"];
+$archivo = $_FILES["documento"]["tmp_name"];
+$tamaño = $_FILES["documento"]["size"];
+$tipo = $_FILES["documento"]["type"];

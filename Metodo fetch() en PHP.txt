@@ -1,0 +1,3 @@
+Metodo fetch() en PHP
+
+/*El metodo fetch nos devuelve un resultado si hay un valor, o false si no hay ningun resultado*/ 

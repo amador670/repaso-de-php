@@ -1,0 +1,7 @@
+-isset(): Determina si una variable está definida y no es NULL.
+
+Si una variable ha sido removida con unset(), esta ya no estará definida. isset() devolverá FALSE si prueba una variable que ha sido definida como NULL. 
+________________________________________________________________________________
+-empty(): Determina si una variable está vacía.
+
+Determina si una variable es considerada vacía. Una variable se considera vacía si no existe o si su valor es igual a FALSE. empty() no genera una advertencia si la variable no existe. 

@@ -1,0 +1,12 @@
+file_exists() - Comprueba si un fichero existe, true si es positivo y false si es negativo 
+
+Ejemplo
+<?php
+$nombre_fichero = '/path/to/foo.txt';
+
+if (file_exists($nombre_fichero)) {
+    echo "El fichero $nombre_fichero existe";
+} else {
+    echo "El fichero $nombre_fichero no existe";
+}
+?>

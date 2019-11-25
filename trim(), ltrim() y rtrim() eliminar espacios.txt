@@ -1,0 +1,26 @@
+Fuente: https://www.anerbarrena.com/php-trim-ltrim-rtrim-3746/    
+
+    trim(): Elimina los espacios en blanco u otros caracteres al inicio y final de una cadena. 
+    ltrim(): Elimina los espacios en blanco u otros caracteres al inicio de una cadena. 
+    rtrim(): Elimina los espacios en blanco u otros caracteres al final de una cadena. 
+
+Sintaxis de uso:
+
+trim ( $cadena , $lista )
+ltrim ( $cadena , $lista )
+rtrim ( $cadena , $lista )
+
+- cadena (obligatorio): Esta es la cadena que queremos tratar para quitar los espacios en blanco.
+- lista (opcional): Este valor representará los caracteres diferentes a un espacio en blanco que queremos eliminar de la cadena.
+
+Ejemplo:
+
+//Primer ejemplo de cadena con espacios en blanco al comienzo y final
+$cadena = " frase frase frase ";
+$cadena_formateada = trim($cadena);
+echo "La cadena original es esta: '".$cadena."' y la formateada es esta otra: '".$cadena_formateada."'";
+ 
+//Segundo ejemplo para quitar caracteres
+$cadena2 = "frase2";
+$cadena_formateada2 = trim($cadena2, "fras");
+echo "La cadena original es esta: '".$cadena2."' y la formateada es esta otra: '".$cadena_formateada2."'";

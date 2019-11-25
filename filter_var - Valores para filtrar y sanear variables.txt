@@ -1,0 +1,8 @@
+Valores para validar correo y metodos, estos nos permite indicar que una variable tendra unas caracteristicas especificas que se deben cumplir. 
+
+Existen dos tipos de filtros:
+
+1.- $variable = filter_sanitize($variable, FILTER_SANITIZE_) - Filtros de saneamiento que limpiará los datos de forma que se eliminen los caracteres no deseados.
+
+2.- $variable = filter_validate($variable, FILTER_VALIDATE_) - Filtros para validar para comprobar que los datos cumplen ciertos requisitos
+

@@ -1,0 +1,162 @@
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing:  border-box;
+  -moz-box-sizing: border-box ;
+  box-sizing:  border-box;
+}
+
+/*Menu header*/
+.container-menu{
+  width: 100%;
+  display: inline-block;
+  background: #e2e2e2;
+}
+
+.titulo-menu li a{
+  font-family: Agency FB;
+  color: #333333;
+  text-decoration: none;
+}
+
+.menu .titulo-menu li{
+  padding: 0px;
+  padding-left: 25px;
+}
+
+.titulo-menu li a h1{
+  font-size: 1.8em;
+}
+
+.menu li{
+  font-family: Arial;
+  color: #f8f8f8;
+  font-size: 15px;
+  display: inline-block;
+  padding: 18px;
+}
+
+.menu nav li:hover{
+  background: #d3d3d3;
+}
+
+nav li a{
+  color: #1d1d1d;
+  text-decoration: none;
+}
+
+/*Seccion active menu*/
+.active{
+  text-decoration: none;
+  color:#006cff;
+}
+
+/*Container*/
+.contenido{
+  margin: 20px 50px;
+}
+
+.contenido h1, h2, h3, h4, h5, h6{
+  font-family: Agency FB;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contenido h1{
+  font-size: 2.5rem;
+}
+
+.contenido h2{
+  font-size: 2.0rem;
+}
+
+.contenido h3{
+  font-size: 1.7rem;
+}
+
+.contenido p{
+  font-family: Arial;
+  padding: 8px 0px;
+  margin-top: 5px 0px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.contenido li{
+  font-family: Arial;
+  padding: 2px 0px;
+  margin: 5px 0px 5px 15px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.contenido a img{
+  display: block;
+  margin-top: 7px;
+  width: 100%;
+  max-width: 80px;
+}
+
+.contacto-autor{
+  background: #CCEEFD;
+  padding: 20px 50px;
+  margin-top: 25px;
+}
+
+.texto-autor h1{
+  font-family: Agency FB;
+  padding-bottom: 20px;
+}
+
+.foto-autor img{
+  width: 100%;
+  max-width: 150px;
+  height: 100%;
+  max-height: 150px;
+  border-radius: 50%;
+  border: 1px ridge #00e1ff;
+  background-color: #00e1ff;
+}
+
+.formulario-estilos {
+  width: 100%;
+  display: inline-block;
+}
+
+/*Iframe comment-box*/
+iframe{
+  width: 100%;
+  height: 550px;
+  border: none;
+}
+
+
+@media screen and (max-width:767px){
+  .menu li{
+    padding: 10px;
+  }
+  .menu nav li:hover{
+    background: none;
+  }
+}
+
+@media screen and (max-width:660px){
+  .contenido{
+    margin: 20px 20px; 
+  }
+
+  .contacto-autor{
+    padding: 20px 10px;
+  }
+
+  .contenido .contacto-autor h1, .contenido .contacto-autor p{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:450px){
+  .contenido p{
+    text-align: left;
+  }
+}

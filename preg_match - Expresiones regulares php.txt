@@ -1,0 +1,15 @@
+1. -preg_match($variableVerifiacion, $variable) 
+Esta es una forma de verificar expresiones, en la primera variable se añade la variable de la expresion regular y en el segundo la variable que se verificara
+
+2.- preg_match( "/^[Expresion regular]+$/", $variable)
+Esta es la segunda forma de verificar expresiones regulares, en la primera variable se añade la expresion regular y en el segundo la variable que se verificara
+
+3.- Metodo por variable: (Este metodo me parece mejor porque facilita a la hora de hacer cambios o mantenimientos en el codigo)
+
+$variable = valor;
+$expresion regular = ("/^[Expresion regular]+$/", $variable)
+preg_match(isset($expresion regular))
+
+En la primera variable añadimos la expresion regular, y en la segunda la variable que se verificara, por ultimo el metodo preg_match con la funcion isset() para verificar si la variable que contiene la expresion regular esta correcta.
+
+	

@@ -1,0 +1,30 @@
+ ////Si el campo archivo $_FILE[] no está vacío
+
+////Si $_FILE es diferente a 0
+            if($_FILES['archivo']['name']!='')
+            {
+                echo "Existe algo en el campo archivo";
+            }
+            else{
+                 echo "No existe algo en el campo archivo";
+            } 
+          
+////Si el campo archivo no está vacío
+            if (!empty($_FILES['archivo']['name']))
+            {
+                echo "Existe algo en el campo archivo";
+            }
+            else{                
+                echo "No existe algo en el campo archivo";
+            }
+
+//Preparo el nombre del archivo en el caso de que exista;
+
+            $nombreArchivo = $_FILES['archivo']['name']; 
+            //Compruebo si el nombre del archivo no está vacío:
+            if($nombreArchivo != ""){
+                 echo "Existe algo en el campo archivo";
+            }
+            else{
+                echo "No existe algo en el campo archivo";
+            }  

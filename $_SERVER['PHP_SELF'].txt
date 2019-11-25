@@ -1,0 +1,5 @@
+$_SERVER[‘PHP_SELF’]:
+
+Esta propiedad se encarga del nombre de archivo del script ejecutándose actualmente, relativo a la raíz de documentos. Por ejemplo, $_SERVER[‘PHP_SELF’] en un script en la dirección http://ejemplos/test.php/teoria.bar seria /test.php/teoria.bar. es decir esta propiedad nos devuelve como resultado la misma pagina que es enviada al servidor, nos devuelve la raiz del documento. 
+
+Un ejemplo al usarla en el metodo "action="<php echo $_SERVER["PHP_SELF"]?>" de un formulario es que nos devuelve a la misma pagina despues de enviar el formulario.

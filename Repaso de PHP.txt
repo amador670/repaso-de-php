@@ -1,0 +1,24 @@
+-comillas simples
+-echo en vez de print
+-include, require y sus derivados (include_once, require_once) son sentencias, no métodos. No debe ponerse la ruta al fichero entre paréntesis.
+Emplea siempre include o require en vez de include_once o require_once para que el cacheado de código sea más efectivo.
+-18. Incrementar o Decrementar variables: ++$i vs $i++
+    Pre-incrementar (++$i) es en torno a un 10% más rápido que post-incrementar ($i++). La razón es que cuando hacemos post-incremento, PHP necesita crear una variable temporal en la que almacenar el valor a ser incrementado.
+_______
+isset()
+    La función isset() (isSet) resulta de una utilidad tremenda. Nos sirve tanto para saber si una determinada variable ha sido inicializada como para comprobar que un índice existe e incluso para trabajar con longitudes de cadenas de un modo más eficiente: si en un determinando momento necesitamos comprobar que una cadena tiene al menos una determinada longitud, por ejemplo que el nombre de usuario tenga más de 4 caracteres, lo más inmediato que se nos puede ocurrir es utilizar strlen()
+
+    if (strlen($username) < 5){
+        ....
+    }
+
+    Pero, en tanto que strlen es una función, PHP necesita realizar un trabajo previo para ejecutar la llamada (convertirla a lowercase y buscarla en la tabla hash de funciones), además de ejecutar la propia función.
+
+    Por contra, isset no es una función sino una construcción del lenguaje. Esto significa que PHP no tendrá que hacer ninguna operación previa ni habrá sobrecarga.
+
+    Así, si queremos comprobar que una variable tiene más de una determinada longitud, podemos hacerlo de un modo más efectivo de la siguiente manera:
+
+    if (isset($username{5})){
+        ....
+    }
+
